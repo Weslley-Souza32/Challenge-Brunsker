@@ -1,0 +1,40 @@
+create database WVLocacao;
+
+use WVLocacao;
+
+create table imovel (
+ID int not null primary key auto_increment,
+CEP int not null,
+Rua varchar (50) not null,
+Complemento varchar (20),
+Bairro varchar (50) not null,
+Cidade varchar (50) not null,
+UF varchar (2) not null,
+Tipo_Imovel int not null,
+Valor_Venda decimal(18,2) not null,
+Metros_Quadrados decimal(18,2),
+Quantidade_Quarto int,
+Quantidade_Banheiro int,
+Vagas_Garagem int,
+Imagem_Imovel longblob,
+foreign key (Tipo_Imovel) references Tipo_Imovel (ID)
+);
+
+create table Tipo_Imovel (
+ID int not null primary key auto_increment,
+Descricao varchar (255) not null
+);
+
+
+insert into Tipo_Imovel (Descricao) values ('Casa');
+insert into Tipo_Imovel (Descricao) values ('Apartamento');
+insert into Tipo_Imovel (Descricao) values ('Clube');
+insert into Tipo_Imovel (Descricao) values ('Fazenda');
+insert into Tipo_Imovel (Descricao) values ('Flat');
+insert into Tipo_Imovel (Descricao) values ('Cobertura');
+insert into Tipo_Imovel (Descricao) values ('Terreno');
+insert into Tipo_Imovel (Descricao) values ('Sitio');
+insert into Tipo_Imovel (Descricao) values ('Galpão');
+insert into Tipo_Imovel (Descricao) values ('Loja/Comércio');
+
+

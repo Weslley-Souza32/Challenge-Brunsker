@@ -149,6 +149,7 @@
   <ItemGroup>
     <Content Include="img\iconepesquisa.svg" />
     <Content Include="img\logowv1.png" />
+    <Content Include="scriptbancovwlocacao.txt" />
     <Content Include="Views\Cadastro.aspx" />
     <Content Include="Views\CatalogoImovel.aspx" />
     <Content Include="css\Style.css" />
