@@ -124,7 +124,7 @@ namespace Challenge_Brunsker
         }
         #endregion
 
-
+        #region Metódo que limpa todos os campos
         private void LimparCamposCadastro()
         {
             
@@ -143,6 +143,7 @@ namespace Challenge_Brunsker
             txtVagaGaragem.Text = string.Empty;
             uploadImagem = null;
         }
+        #endregion
     }
 
 }
